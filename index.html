@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width  initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cheat Sheet</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Athiti&family=Edu+NSW+ACT+Foundation&family=Edu+VIC+WA+NT+Beginner&family=Palanquin&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>FOUR COMMON CSS VISUAL PROPERTIES</h1>
+      <h2>
+        CSS provides four common properties to alter the visual weight/emphasis
+        of text.
+      </h2>
+    </header>
+    <main>
+      <h2 class="propertie">font- style: <span class="description"> Used to turn italic text on or off. Possible values are as follows (you'll rarely use this, unless you want to turn some italic styling off for some reason):</span></h2>
+
+      <table>
+        <thead>
+          <th>Propertie</th>
+          <th>Value</th>
+          <th>Description</th>
+        </thead>
+        <tr>
+          <td class="td_properties">font- style</td>
+          <td>normal</td>
+          <td>Sets the text to normal font(turns existing italics off).</td>
+        </tr>
+        <tr>
+          <td class="td_properties">font- style</td>
+          <td>italic</td>
+          <td>
+            Sets the text to use the italic version of the font, if variable; if
+            not , it will simulate italics with oblique instead.
+          </td>
+        </tr>
+        <tr>
+          <td class="td_properties">font- style</td>
+          <td>oblique</td>
+          <td>
+            Sets the text to use a simulated version of an italic font, created
+            by slanting the normal version.
+          </td>
+        </tr>
+      </table>
+      <h2 class="propertie">font-weight : <span class="description">Sets how bold the text is. This has many values available in case you have many font variants available (such as -light, -normal, -bold, -extrabold, -black, etc.), but realistically you'll rarely use any of them except for normal and bold:</span></h2>
+
+      <table>
+        <thead>
+          <th>Propertie</th>
+          <th>Value</th>
+          <th>Description</th>
+        </thead>
+        <tr>
+          <td class="td_properties">font-weight</td>
+          <td>normal, bold</td>
+          <td>Normal and bold font weight.</td>
+        </tr>
+
+        <tr>
+          <td class="td_properties">font-weight</td>
+          <td>lighter, bolder</td>
+          <td>
+            Sets the current element's boldness to be one step lighter or
+            heavier than its parent element's boldness.
+          </td>
+        </tr>
+        <tr>
+          <td class="td_properties">font-weight</td>
+          <td>100–900</td>
+          <td>
+            Numeric boldness values that provide finer grained control than the
+            above keywords, if needed.
+          </td>
+        </tr>
+      </table>
+      <h2 class="propertie">text-transform : <span class="description">Allows you to set your font to be transformed. Values include:</span></h2>
+
+      <table>
+        <thead>
+          <th>Propertie</th>
+          <th>Value</th>
+          <th>Description</th>
+        </thead>
+        <tr>
+          <td class="td_properties">text-transform</td>
+          <td>none</td>
+          <td> Prevents any transformation.</td>
+        </tr>
+
+        <tr>
+          <td class="td_properties">text-transform</td>
+          <td>uppercase</td>
+          <td>
+            Transforms all text to capitals.
+          </td>
+        </tr>
+        <tr>
+          <td class="td_properties">text-transform </td>
+          <td>lowercase</td>
+          <td>
+            Transforms all text to lower case.
+          </td>
+          <tr>
+            <td class="td_properties">text-transform</td>
+            <td>capitalize</td>
+            <td>
+              Transforms all words to have the first letter capitalized.
+            </td>
+          </tr>
+          <tr>
+            <td class="td_properties">text-transform </td>
+            <td>full-width</td>
+            <td>
+              Transforms all glyphs to be written inside a fixed-width square, similar to a monospace font, allowing aligning of, e.g., Latin characters along with Asian language glyphs (like Chinese, Japanese, Korean).
+            </td>
+        </tr>
+      </table>
+      <h2 class="propertie">text-decoration: <span class="description">Sets/unsets text decorations on fonts (you'll mainly use this to unset the default underline on links when styling them). Available values are:</span></h2>
+
+      <table class="last-table">
+        <thead>
+          <th>Propertie</th>
+          <th>Value</th>
+          <th>Description</th>
+        </thead>
+        <tr>
+          <td class="td_properties">text-decoration</td>
+          <td>none</td>
+          <td>Unsets any text decorations already present .</td>
+        </tr>
+
+        <tr>
+          <td class="td_properties">text-decoration</td>
+          <td>underline</td>
+          <td>Underline the text.</td>
+        </tr>
+        <tr>
+          <td class="td_properties">text-decoration</td>
+          <td>overline</td>
+          <td>Gives the text on overline.</td>
+        </tr>
+        <tr>
+          <td class="td_properties">text-decoration</td>
+          <td>line-through</td>
+          <td>Puts a strikethrough over the text.</td>
+        </tr>
+      </table>
+      <p>
+        You should note that text-decoration can accept multiple values at once
+        if you want to add multiple decorations simultaneously, for example,
+        text-decoration: underline overline. Also note that text-decoration is a
+        shorthand property for text-decoration-line, text-decoration-style, and
+        text-decoration-color. You can use combinations of these property values
+        to create interesting effects, for example: text-decoration:
+        line-through red wavy.
+      </p>
+    </main>
+  </body>
+  <footer>
+    <p class="footer">Copyright MDN Web docs all rights reserved.</p>
+    <p class="footer">Created by Leonardo Rocha, July 2022, Codecademy Project</p>
+  </footer>
+</html>
